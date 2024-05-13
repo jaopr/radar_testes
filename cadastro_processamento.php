@@ -6,12 +6,12 @@ $password = "250904";
 $database = "radar_testes";
 
 // Cria a conexão
-$conn = new mysqli($servername, $username, $password, $database);
+//$conn = new mysqli($servername, $username, $password, $database);
 
 // Verifica se houve erro na conexão
-if ($conn->connect_error) {
-    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
-}
+//if ($conn->connect_error) {
+  //  die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+//}
 
 // Verifica se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -25,15 +25,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Prepara e executa a consulta SQL para inserir os dados no banco de dados
     $sql = "INSERT INTO usuarios (username, email, password) VALUES ('$username', '$email', '$password')";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "<h2>Conta criada com sucesso!</h2>";
-        echo "<p>Usuário: $username</p>";
-        echo "<p>Email: $email</p>";
+if ($conn->query($sql) === TRUE) {
+        // Redireciona o usuário de volta para a tela de login após o cadastro
+        header("Location: telalogin.php");
+        exit;
     } else {
         echo "Erro ao cadastrar usuário: " . $conn->error;
     }
 }
 
-// Fecha a conexão com o banco de dados
-$conn->close();
-?>
+// Fecha a conexão com o banco de dados /*
+/*$conn->close();
+?>*/

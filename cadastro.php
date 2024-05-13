@@ -15,10 +15,10 @@
             <div class="login-box">
             <img src="imgs/logo_radar.png" alt="Logo Radar" class="logo-radar">
                 <p>Preencha os campos abaixo para criar sua conta.</p>
-                <form action="cadastro_processamento.php" method="post">
-                    <input type="text" name="username" placeholder="Usuário" required>
-                    <input type="email" name="email" placeholder="Endereço de Email" required>
-                    <input type="password" name="password" placeholder="Senha" required>
+                <form action="cadastro_processamento.php" method="post"> <!-- Alteração no action -->
+                    <input type="text" name="username" placeholder="Usuário">
+                    <input type="text" name="email" placeholder="Endereço de Email">
+                    <input type="text" name="password" placeholder="Senha">
                     <button type="submit">Cadastrar</button>
                 </form>
                 <p>Já possui uma conta? <a href="telalogin.php">Faça login</a></p>

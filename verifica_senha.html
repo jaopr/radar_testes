@@ -17,7 +17,7 @@
                 <img src="imgs/logo_radar.png" alt="Logo Radar" class="logo-radar">
                 <p>Insira sua senha para continuar.</p>
                 <form action="verifica_senha.php" method="post">
-                    <input type="hidden" name="username" value="<?php echo $_POST['username']; ?>">
+                    <input type="hidden" name="username" value="<?php echo isset($_POST['username']) ? $_POST['username'] : ''; ?>">
                     <input type="password" name="password" placeholder="Senha" required>
                     <button type="submit">Entrar</button>
                 </form>

@@ -15,6 +15,13 @@
         <div class="right-half">
             <div class="login-box">
                 <img src="imgs/logo_radar.png" alt="Logo Radar" class="logo-radar">
+                <?php
+                // Verifica se houve um erro ao tentar realizar o login
+                if(isset($_GET['error'])) {
+                    $error = $_GET['error'];
+                    echo "<p class='error-message'>$error</p>";
+                }
+                ?>
                 <p>Bem-vindo de volta, por favor, logue e continue.</p>
                 <form action="verifica_senha.php" method="post">
                     <input type="text" name="username" placeholder="Email ou Nome de Usuário" required>
