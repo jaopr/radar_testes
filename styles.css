@@ -1,0 +1,100 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161925; /* Fundo azul escuro */
+    color: #fff; /* Texto branco */
+    font-size: 16px;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-half {
+    flex: 1;
+    background-color: #161925; /* Fundo azul escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-half {
+    flex: 1;
+    background-color: #1f2732; /* Fundo azul um pouco mais claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.login-box {
+    width: 300px;
+    text-align: center;
+    background-color: #161925; /* Fundo azul escuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.small-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.social-login {
+    margin-bottom: 20px;
+}
+
+.social-login img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fff; /* Borda branca */
+    border-radius: 5px;
+    background-color: #1f2732; /* Fundo azul escuro */
+    color: #fff; /* Texto branco */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
+}
