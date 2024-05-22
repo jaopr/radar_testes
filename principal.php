@@ -9,15 +9,12 @@
 <body>
     <div class="container">
         <?php
-        // Inicia a sessão
         session_start();
 
-        // Verifica se o nome de usuário está na sessão
         if(isset($_SESSION['nome'])) {
             $username = $_SESSION['nome'];
             echo "<h1>Você está logado, <span class='username'>$username</span>!</h1>";
         } else {
-            // Se o nome de usuário não estiver na sessão, mostra uma mensagem genérica
             echo "<h1>Você está logado!</h1>";
         }
         ?>
