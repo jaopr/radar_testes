@@ -2,8 +2,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #161925; /* Fundo azul escuro */
-    color: #fff; /* Texto branco */
+    background-color: #161925;
+    color: #fff; 
     font-size: 16px;
 }
 
@@ -14,7 +14,7 @@ body {
 
 .left-half {
     flex: 1;
-    background-color: #161925; /* Fundo azul escuro */
+    background-color: #161925;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ body {
 
 .right-half {
     flex: 1;
-    background-color: #1f2732; /* Fundo azul um pouco mais claro */
+    background-color: #1f2732; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,10 +36,10 @@ body {
 .login-box {
     width: 300px;
     text-align: center;
-    background-color: #161925; /* Fundo azul escuro */
+    background-color: #161925;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .small-logo {
@@ -62,10 +62,10 @@ input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #fff; /* Borda branca */
+    border: 1px solid #fff; 
     border-radius: 5px;
-    background-color: #1f2732; /* Fundo azul escuro */
-    color: #fff; /* Texto branco */
+    background-color: #1f2732;
+    color: #fff;
     font-family: 'Josefin Sans', sans-serif;
 }
 
